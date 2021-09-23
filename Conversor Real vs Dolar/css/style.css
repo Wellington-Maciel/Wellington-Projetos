@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    align-items: center;
+    background-color: #323232;
+}
+h1{
+    color: #cfff00;
+    font-size: 50px;
+}
+input{
+    width: 140px;
+    height: 30px;
+    mar
+}
+#reais{
+ border: 3px solid lightsteelblue;
+ 
+}
+#dolar{
+    border: 3px solid lightcoral;
+}
+img{
+    width: 70%;
+}
+p{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+button{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #ccff00;
+    border-radius: 10px;
+    background-color: red;
+    color: #ffffff;    
+}
+button:hover{
+    color: #323232;
+    background-color: darkviolet;
+}
