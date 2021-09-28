@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 0%, rgba(148,0,255,1) 100%);
+
+}
+h1,h3,h4,p{
+    color: darkblue;
+    text-align: center;
+    margin: 10px;
+    
+}
+p.compartilhe{
+    text-align: left;
+    margin-left: -5px;
+}
+#aprendiz{
+    min-width: 250px;
+    min-height: 130px;
+    width: 150px;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+}
+form,div{
+    width: 40%;
+    min-width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    margin: 100px auto;
+    padding: 20px;
+}
+input, textarea{
+    min-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+div#campo{
+    clear: both;
+    min-width: 200px;
+    text-align: center;
+    color: darkblue;
+    margin: 10px auto;
+    display: block;
+    box-shadow: none;
+
+
+}
+#cursos{
+    min-width: 100px;
+    border-radius: 5px;
+    border: 1px solid;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    display: block;
+    margin: -10px auto;
+}
+
+button{
+   display:block;
+   margin: 20px auto;
+   height: 40px;
+   min-width: 280px;
+   border: none;
+   border-radius: 5px;
+   background: #096679;
+   font-size: 22px;
+   color:white;
+   cursor: pointer;
+   
+}
+button:hover{
+    opacity: 0.8;
+    
+}
+button:active{
+    opacity: 0.6;
+}
+div.img{
+  box-shadow: none;
+  display: inline;
+  padding: 1px;
+  min-width: 25px;
+  min-height:25px;
+  margin: 10px auto;
+}
+
+

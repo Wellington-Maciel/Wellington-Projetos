@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Formulário - Jovem Aprendiz</title>
+
+    <script type="text/javascript">
+        function mascara(telefone){ 
+            if(telefone.value.length == 0)
+                telefone.value = '(' + telefone.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+            if(telefone.value.length == 3)
+                telefone.value = telefone.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
+ 
+            if(telefone.value.length == 10)
+                telefone.value = telefone.value + '-'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+  
+}
+    </script>
+
+    
+</head>
+<body>
+    <form action="https://formsubmit.co/f513afa037982387c9ebe75ad16719b9" method="POST">
+        <input type="hidden" name="_next" value="https://obrigado-por-se-inscrever.netlify.app/">
+        
+        <img id="aprendiz" src="img/jovem-aprendiz.jpeg" alt="Logo Jovem Aprendiz">
+        <h3>20 VAGAS:</h3>
+        <p>Aux. Administrativo</p>
+        <p>Repositor</p>
+        <h4>Projeto Destinado a Jovens Entre 11 a 18 Anos</h4>
+
+        <!-- INICIO DO FORMULARIO-->
+        <h1>Fomulário Jovem Aprendiz</h1>
+
+        <input type="text" placeholder="Nome do Aprendiz" name="Name" required>
+        <input type="number" placeholder="Idade" name="Idade" required>  
+        <input type="text" placeholder="Telefone" name="Telefone do Aprendiz" required size="20" maxlength="15" onkeypress="mascara(this)">
+        <input type="text" placeholder="Nome do Responsável" name="Responsavel" required>
+        <input type="text" placeholder="Telefone do Responsável" name="Telefone do Responsavel" required size="20" maxlength="15" onkeypress="mascara(this)">
+        <input type="text" placeholder="Cidade-UF" name="Cidade" required>
+        <input type="text" placeholder="Curso Escolhido" name="Curso Escolhido" required>
+
+        <div id="campo">
+            <h3 for="cursos"><strong>Cursos Gratuitos</strong></h3>
+            <select id="cursos">
+                <option selected disable value>Selecione</option>
+                <option>Aux. Administrativo</option>
+                <option>Atendimento ao Cliente</option>
+                <option>Caixa</option>
+                <option>Gestão e Publicidade</option>
+                <option>Informática Básica</option>
+                <option>Informática Avançada</option>            
+            </select>                           
+        </div>  
+            
+        <button type="submit">Enviar Inscrição</button>
+        
+            <p class="compartilhe">Compartilhe:</p>
+        
+            <div class="img">
+                
+                <a href="https://api.whatsapp.com/send?text=https://formulario-inscricao.netlify.app/">
+                    <img width="25px" height="25px" src="img/whatasapp.png" alt="Logo WhatsApp">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=formulario-inscricao.netlify.app/">
+                    <img class="img" width="25px" height="25px" src="img/facebook.png" alt="Logo facebook">
+                </a>
+            </div>
+   </form>
+
+   
+</body>
+</html>
